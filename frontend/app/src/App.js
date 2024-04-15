@@ -134,7 +134,7 @@ function App() {
       <div className="buttons">
         <button onClick={handleClear}>Clear</button>
         <button onClick={handleRandom}>Random</button>
-        <button onClick={handleGuess}>Guess</button>
+        <button onClick={handleGuess}>Predict</button>
       </div>
       <p className="prediction">Model prediction: {prediction}</p>
       <div className="brush-size">
