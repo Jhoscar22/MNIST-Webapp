@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Take the full height of the viewport */
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(28, 15px); /* Creates 28 columns */
+  grid-template-rows: repeat(28, 15px); /* Creates 28 rows */
+  gap: 1px; /* Adjust the gap to your liking */
+}
+
+.pixel {
+  width: 15px; /* Adjust the size to your liking */
+  height: 15px;
+  border: 1px solid #ddd; /* Light border for each pixel to distinguish them */
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin-bottom: 8px;
+}
+
+.true-label,
+.prediction {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Default light theme styles */
+.app-container {
+  color: #000;
+}
+
+/* Styles for the dark mode */
+.app-container.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Styles for other elements that change in dark mode */
+.app-container.dark-mode .grid {
+  background-color: #222; /* Darker background for the grid */
+}
+
+.app-container.dark-mode .pixel {
+  border: 1px solid #444; /* Darker border for each pixel */
+}
+
+.app-container.dark-mode .buttons button {
+  background-color: #555; /* Darker background for buttons */
+  color: #fff; /* Light text for buttons */
+  margin: 4px;
+}
